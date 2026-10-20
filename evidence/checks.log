@@ -1,0 +1,14 @@
+/Users/rajreddy/dev/outreach/projects/d4-infrastructure-change-risk-checker/.venv/bin/python -m ruff check src tests
+All checks passed!
+/Users/rajreddy/dev/outreach/projects/d4-infrastructure-change-risk-checker/.venv/bin/python -m ruff format --check src tests
+2 files already formatted
+/Users/rajreddy/dev/outreach/projects/d4-infrastructure-change-risk-checker/.venv/bin/python -m pytest -q
+..                                                                       [100%]
+2 passed in 0.10s
+/Users/rajreddy/dev/outreach/projects/d4-infrastructure-change-risk-checker/.venv/bin/python src/main.py > evidence/bench.json
+{
+  "seeded_risky_changes": 5,
+  "risky_changes_caught": 5,
+  "safe_controls": 5,
+  "false_positive_rate": 0.0
+}

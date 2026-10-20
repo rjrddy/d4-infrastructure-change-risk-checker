@@ -1,0 +1,27 @@
+{
+  "id": "D4",
+  "name": "Infrastructure change risk checker",
+  "problem": "Parse a Terraform plan and score blast radius (deletes, IAM changes, data stores) with a PR comment.",
+  "results": [
+    [
+      "Seeded risky changes caught",
+      "risky_changes_caught",
+      ""
+    ],
+    [
+      "Safe controls evaluated",
+      "safe_controls",
+      ""
+    ],
+    [
+      "False-positive rate",
+      "false_positive_rate",
+      ""
+    ]
+  ],
+  "diagram": "TerraformPlanJSON --> ActionAndIAMAndIngressRules --> RiskReasons --> PRComment",
+  "limits": "Synthetic Terraform plan JSON only; no cloud resources are accessed or changed. Rules flag destruction/replacement, IAM changes, public ingress and unknown IAM values. False-positive rate describes the fixed safe controls, not general infrastructure. evidence/findings.json explains every flag. The GitHub Action comments a seeded report on same-repository PRs; production ingestion and broader provider schemas remain Next. evidence/gate-failure.log records a destructive plan being blocked.",
+  "next": "Consume uploaded real plan artifacts with secret redaction and add provider-specific risk context.",
+  "status": "done",
+  "command": ".venv/bin/python src/main.py --gate  # expected exit 1"
+}

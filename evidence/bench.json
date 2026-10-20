@@ -1,0 +1,6 @@
+{
+  "seeded_risky_changes": 5,
+  "risky_changes_caught": 5,
+  "safe_controls": 5,
+  "false_positive_rate": 0.0
+}

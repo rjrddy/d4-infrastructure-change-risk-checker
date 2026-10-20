@@ -1,0 +1,167 @@
+[
+  {
+    "risky": true,
+    "resource_changes": [
+      {
+        "address": "aws_db_instance.fixture_0",
+        "type": "aws_db_instance",
+        "change": {
+          "actions": [
+            "delete"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "resource_changes": [
+      {
+        "address": "aws_iam_policy.fixture_1",
+        "type": "aws_iam_policy",
+        "change": {
+          "actions": [
+            "update"
+          ],
+          "after": {
+            "policy": "*"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "resource_changes": [
+      {
+        "address": "aws_security_group.fixture_2",
+        "type": "aws_security_group",
+        "change": {
+          "actions": [
+            "update"
+          ],
+          "after": {
+            "ingress": [
+              "0.0.0.0/0"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "resource_changes": [
+      {
+        "address": "aws_s3_bucket.fixture_3",
+        "type": "aws_s3_bucket",
+        "change": {
+          "actions": [
+            "delete"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "resource_changes": [
+      {
+        "address": "aws_instance.fixture_4",
+        "type": "aws_instance",
+        "change": {
+          "actions": [
+            "delete",
+            "create"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "resource_changes": [
+      {
+        "address": "aws_instance.fixture_5",
+        "type": "aws_instance",
+        "change": {
+          "actions": [
+            "create"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "resource_changes": [
+      {
+        "address": "aws_db_instance.fixture_6",
+        "type": "aws_db_instance",
+        "change": {
+          "actions": [
+            "no-op"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "resource_changes": [
+      {
+        "address": "aws_security_group.fixture_7",
+        "type": "aws_security_group",
+        "change": {
+          "actions": [
+            "update"
+          ],
+          "after": {
+            "ingress": [
+              "10.0.0.0/8"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "resource_changes": [
+      {
+        "address": "aws_s3_bucket.fixture_8",
+        "type": "aws_s3_bucket",
+        "change": {
+          "actions": [
+            "no-op"
+          ],
+          "after": {}
+        }
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "resource_changes": [
+      {
+        "address": "aws_instance.fixture_9",
+        "type": "aws_instance",
+        "change": {
+          "actions": [
+            "update"
+          ],
+          "after": {
+            "tags": {
+              "team": "synthetic"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "risky": true,
+    "findings": [
+      {
+        "address": "aws_db_instance.fixture_0",
+        "reasons": [
+          "destructive action or replacement",
+          "data store destruction"
+        ],
+        "score": 50
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "findings": [
+      {
+        "address": "aws_iam_policy.fixture_1",
+        "reasons": [
+          "IAM permission change"
+        ],
+        "score": 25
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "findings": [
+      {
+        "address": "aws_security_group.fixture_2",
+        "reasons": [
+          "public ingress"
+        ],
+        "score": 25
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "findings": [
+      {
+        "address": "aws_s3_bucket.fixture_3",
+        "reasons": [
+          "destructive action or replacement",
+          "data store destruction"
+        ],
+        "score": 50
+      }
+    ]
+  },
+  {
+    "risky": true,
+    "findings": [
+      {
+        "address": "aws_instance.fixture_4",
+        "reasons": [
+          "destructive action or replacement"
+        ],
+        "score": 25
+      }
+    ]
+  },
+  {
+    "risky": false,
+    "findings": []
+  },
+  {
+    "risky": false,
+    "findings": []
+  },
+  {
+    "risky": false,
+    "findings": []
+  },
+  {
+    "risky": false,
+    "findings": []
+  },
+  {
+    "risky": false,
+    "findings": []
+  }
+]
